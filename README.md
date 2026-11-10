@@ -33,13 +33,28 @@ Use CronPilot Sim Bridge only on a trusted private network. Do not expose its ne
 
 ## Android Application
 
-CronPilot Android provides flight timers, GPS tracking, offline navigation references and optional simulator connectivity.
-
 https://github.com/SAGMSoftware/cronpilot-android
 
 ## Important Notice
 
 CronPilot and CronPilot Sim Bridge are not certified aviation instruments and must not be used for safety-critical flight operations.
+
+## License, Warranty and Third-Party Modifications
+
+Copyright (C) 2026 SAGM Software.
+
+CronPilot Sim Bridge is distributed under the GNU Affero General Public License, version 3 or later (AGPL-3.0-or-later), subject to applicable third-party license terms.
+
+The software is provided "AS IS", without warranty of any kind, to the extent permitted by applicable law.
+
+Third parties may modify and redistribute the software in accordance with the applicable license terms. Modified versions must clearly identify the changes made and must not be misrepresented as official SAGM Software releases.
+
+SAGM Software does not review, approve, maintain or support independently modified versions unless expressly stated otherwise.
+
+The disclaimer of warranty and limitation of liability in Sections 15 and 16 of the GNU AGPL apply, subject to mandatory applicable law.
+
+Official releases are published at:
+https://github.com/SAGMSoftware/cronpilot-windows-bridge
 
 ## Support
 
