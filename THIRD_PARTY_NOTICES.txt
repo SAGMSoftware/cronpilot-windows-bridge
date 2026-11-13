@@ -1,0 +1,114 @@
+CRONPILOT SIM BRIDGE 0.3.4 - THIRD-PARTY SOFTWARE AND LICENSE NOTICES
+====================================================================
+Updated: November 13, 2026
+Publisher: SAGM Software
+Support: support@sagm.net
+Project: https://github.com/SAGMSoftware/cronpilot-windows-bridge
+
+CronPilot Sim Bridge is built using third-party software. The rights and
+conditions for each component are determined by its actual license and the
+specific files included in the distributed Windows installer and executable.
+This document is a summary and does not replace the full license texts.
+
+1. SIMCONNECT FOR PYTHON
+------------------------
+Package: SimConnect==0.4.26
+Project: Python-SimConnect (maintained on PyPI by odwdinc)
+Author listed on PyPI: Anthony Pray
+License declared for this package: GNU Affero General Public License,
+version 3 or later (AGPL-3.0-or-later).
+
+Package and license information:
+  https://pypi.org/project/SimConnect/0.4.26/
+  https://github.com/odwdinc/Python-SimConnect
+  https://www.gnu.org/licenses/agpl-3.0.html
+
+The approved Windows build procedure is designed to include the exact
+SimConnect 0.4.26 source distribution as:
+  Source/SimConnect-0.4.26.tar.gz
+and a copy of the AGPL version 3 text as:
+  Licenses/AGPL-3.0.txt
+
+The AGPL may require distribution of complete corresponding source code and
+other notices for combined works. Merely mentioning the license or offering
+a ZIP file does not by itself establish compliance. Review the actual final
+binary, source package, applicable licenses and all distribution obligations
+before publishing any installer.
+
+2. PYINSTALLER
+---------------
+Build dependency: pyinstaller==6.22.3
+License: GPL-2.0-or-later with a special exception for bundled executables;
+selected PyInstaller files are also under Apache-2.0.
+Official license information:
+  https://pyinstaller.org/en/stable/license.html
+
+The bootloader exception allows redistribution of executables under an
+applicable application license, subject to the licenses of all bundled
+dependencies. The final package must still comply with third-party terms.
+
+3. PILLOW
+----------
+Build dependency: Pillow>=12.0,<13.0
+License: MIT-CMU (a permissive HPND-family license; see the installed distribution).
+Official information:
+  https://pillow.readthedocs.io/en/stable/about.html#license
+  https://github.com/python-pillow/Pillow/blob/main/LICENSE
+
+The precise Pillow patch version is not pinned in the approved build
+requirements and must be checked against the actual release environment.
+Image codecs and other bundled libraries may have additional notices.
+
+4. CPYTHON, TCL AND TK
+-----------------------
+Runtime: CPython (Python 3.14 series under the approved build process),
+including the tkinter GUI module and associated Tcl/Tk components.
+CPython is distributed under the Python Software Foundation License,
+version 2; some bundled files have additional licenses. Tcl/Tk has its
+own permissive license with copyright and notice requirements.
+Official information:
+  https://docs.python.org/3/license.html
+  https://www.tcl-lang.org/software/tcltk/license.html
+
+5. INNO SETUP
+--------------
+Windows installer creation uses Inno Setup 6 or 7.
+Inno Setup is a separately licensed installation-builder project. The
+resulting installer includes Inno Setup components. Use and redistribution
+are subject to the Inno Setup license applicable to the actual version.
+Official information:
+  https://jrsoftware.org/isinfo.php
+
+6. MICROSOFT FLIGHT SIMULATOR / SIMCONNECT SDK
+-----------------------------------------------
+Microsoft Flight Simulator, SimConnect and related Microsoft SDK/runtime
+components are Microsoft technologies, not part of the Python-SimConnect
+AGPL license grant. Their redistribution and use are subject to separate
+Microsoft terms where applicable. Verify whether Microsoft binaries are
+included in the final packaged executable and meet the relevant conditions.
+This project is not affiliated with or endorsed by Microsoft.
+
+APPLICATION SOURCE AND RELEASE MATERIALS
+-----------------------------------------
+The approved build package contains an application source archive named:
+  CronPilot_Sim_Bridge_Source_v0_3_4.zip
+
+The approved installer script is configured to install this archive under
+its Source directory, alongside the SimConnect source archive and the AGPL
+license text described above. The public GitHub repository currently shows
+an AGPL version 3 project LICENSE; its exact scope and the licenses of
+third-party components must both be respected.
+
+For every public binary release, make the complete corresponding application
+source and necessary third-party source/license information available through
+an appropriate distribution method, and check that it actually corresponds
+to the released binary. The project repository is:
+  https://github.com/SAGMSoftware/cronpilot-windows-bridge
+
+This list identifies the main declared dependencies in the approved source
+package. It is NOT a verified, exhaustive software bill of materials for
+the compiled installer: transitive dependencies, native libraries, image
+codecs and exact build versions remain to be checked against the release.
+
+If you need source-code or license information for a distributed build,
+contact support@sagm.net.
